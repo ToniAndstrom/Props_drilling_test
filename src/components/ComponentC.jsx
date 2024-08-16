@@ -3,7 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const ComponentC = (props) => {
-  const { data } = props;
+  const { data, setData } = props;
   const [orders, setOrders] = useState(data.orders);
 
   useEffect(() => {

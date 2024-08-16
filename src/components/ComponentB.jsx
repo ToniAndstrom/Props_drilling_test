@@ -1,7 +1,7 @@
 import ComponentC from "./ComponentC";
 
 const ComponentB = (props) => {
-  const { data } = props;
+  const { data, setData } = props;
 
   return (
     <div>
@@ -23,7 +23,7 @@ const ComponentB = (props) => {
           })}
         </div>
       </div>
-      <ComponentC data={data} />
+      <ComponentC data={data} setData={setData} />
     </div>
   );
 };
